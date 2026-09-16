@@ -22,8 +22,11 @@ hora:
 	 converte os timestamps para o fuso `America/Sao_Paulo`.
 3. **Load:** grava os dados na tabela `sp_weather` do PostgreSQL.
 
-![Fluxo ETL do pipeline](docs/images/fluxo-etl-weather-data-pipeline.png)
-![Arquitetura de orquestração local](docs/images/arquitetura-orquestracao-local.png)
+### Fluxo ETL - Weather Data Pipeline
+![Fluxo ETL do pipeline](docs/fluxo-etl-weather-data-pipeline.png)
+
+### Arquitetura de Orquestração de Dados Local (Airflow Celery + Docker)
+![Arquitetura de orquestração local](docs/arquitetura-orquestracao-local.png)
 
 ## Pré-requisitos
 
