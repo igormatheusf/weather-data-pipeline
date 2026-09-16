@@ -336,7 +336,7 @@ wheels = [
 [[package]]
 name = "pipeline-weather"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "pandas" },
     { name = "psycopg2-binary" },
