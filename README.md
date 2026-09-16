@@ -22,6 +22,9 @@ hora:
 	 converte os timestamps para o fuso `America/Sao_Paulo`.
 3. **Load:** grava os dados na tabela `sp_weather` do PostgreSQL.
 
+![Fluxo ETL do pipeline](docs/images/fluxo-etl-weather-data-pipeline.png)
+![Arquitetura de orquestração local](docs/images/arquitetura-orquestracao-local.png)
+
 ## Pré-requisitos
 
 - Docker e Docker Compose instalados.
@@ -50,6 +53,7 @@ como `AIRFLOW_UID`, `FERNET_KEY` e as credenciais do usuário administrador.
 Inicialize os serviços:
 
 ```bash
+docker compose up airflow-init
 docker compose up -d
 ```
 
@@ -77,6 +81,7 @@ docker compose down
 ├── dags/                 # DAGs do Airflow
 ├── src/                  # Extração, transformação e carga
 ├── data/                 # JSON coletado e arquivo temporário do pipeline
+├── docs/                 # Imagens e JSON Excalidraw com a arquitetura do projeto
 ├── config/               # Configurações do Airflow e variáveis locais
 ├── logs/                 # Logs das execuções do Airflow
 ├── notebooks/            # Análises exploratórias
